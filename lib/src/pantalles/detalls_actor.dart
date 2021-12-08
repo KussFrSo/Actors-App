@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 class ActorDetalls extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    Actor infoActor = ModalRoute.of(context).settings.arguments;
+    final infoActor = ModalRoute.of(context).settings.arguments as Actor;
 
     return Scaffold(
         body: Container(

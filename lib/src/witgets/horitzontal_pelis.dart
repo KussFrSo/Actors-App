@@ -35,6 +35,8 @@ class _HoritzontalPeliState extends State<HoritzontalPeli> {
                 borderRadius: BorderRadius.circular(20.0),
                 child: Container(
                   child: GestureDetector(
+                    onTap: () => Navigator.of(context).pushNamed('/third',
+                        arguments: widget.peliculas[index].id),
                     child: FadeInImage(
                       image:
                           NetworkImage(widget.peliculas[index].getPosterPeli()),
